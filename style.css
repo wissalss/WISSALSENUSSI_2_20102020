@@ -21,8 +21,6 @@
                 .header {
                     display: grid;
                     align-items: center;
-                    margin: auto;
-                    max-width: 1440px;
                 }
 
                 .headerImg {
@@ -59,11 +57,14 @@
                     .header {
                         grid-template-columns: auto 1fr auto auto;
                         grid-template-areas: "logo . navbar button";
-                        margin: 0;
+                        margin: 0 2rem;
                     }
                     .I {
                         border-top: 3px solid #0065fc;
                         color: #0065FC;
+                    }
+                    .headerImg {
+                        padding: 0;
                     }
                 }
 
@@ -73,7 +74,7 @@
                         grid-template-areas: "logo . button" "navbar navbar navbar"
                     }
                     .headerimg {
-                        order: 0
+                        order: 0;
                     }
                     .signup {
                         order: 1
@@ -96,6 +97,7 @@
 
                 #intro {
                     padding: 30px 40px;
+                    width: auto;
                 }
 
                 .searchp {
@@ -104,6 +106,7 @@
 
                 #search {
                     display: flex;
+                    justify-content: center;
                 }
 
                 #location {
@@ -144,6 +147,9 @@
                         font-size: 1rem;
                         cursor: pointer;
                     }
+                    #search {
+                        justify-content: flex-start;
+                    }
                 }
 
                 @media screen and (max-width: 699px) {
@@ -159,6 +165,9 @@
                     }
                     .searchsubmit {
                         display: none;
+                    }
+                    #search {
+                        justify-content: center;
                     }
                 }
 
