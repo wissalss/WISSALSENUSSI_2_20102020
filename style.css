@@ -192,6 +192,11 @@
                     cursor: pointer;
                 }
 
+                .filters :hover {
+                    background-color: #f3f8ff;
+                    transform: scale(1.015);
+                }
+
                 .icon {
                     background-color: #deebff;
                     border-radius: 100%;
