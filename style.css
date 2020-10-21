@@ -176,10 +176,14 @@
                     flex-wrap: wrap;
                 }
 
-                h2 {
+                #filtreh3 {
                     margin: 0 2rem 1rem 0;
+                }
+
+                h3 {
                     display: flex;
                     align-items: center;
+                    margin: 0 1rem;
                 }
 
                 .filters {
@@ -192,9 +196,12 @@
                     cursor: pointer;
                 }
 
-                .filters :hover {
-                    background-color: #f3f8ff;
-                    transform: scale(1.015);
+                .filters:hover {
+                    border: 2px solid rgb(217 217 217 / 0.5);
+                }
+
+                .filters:hover>.icon {
+                    background-color: rgb(222 235 255 / 0.5);
                 }
 
                 .icon {
@@ -207,11 +214,6 @@
                     justify-content: center;
                     margin: -2px;
                     color: #0065fc;
-                }
-
-                h3 {
-                    margin: 0 1rem;
-                    cursor: pointer;
                 }
 
                 #result {
@@ -413,7 +415,7 @@
                     color: #f2f2f2;
                 }
 
-                #hebh1 {
+                #hebh2 {
                     margin-top: 2rem;
                     margin-left: 1.5rem;
                 }
@@ -490,6 +492,10 @@
                 .activitytext {
                     font-size: 10px;
                     margin: 10px;
+                }
+
+                .h3activity {
+                    font-size: medium;
                 }
 
                 @media screen and (min-width: 900px) {
